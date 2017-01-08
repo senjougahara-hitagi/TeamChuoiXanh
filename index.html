@@ -9,13 +9,13 @@
 
 
     <script type="text/javascript" src="libs/bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="libs/handlebars-v4.0.5.js"></script>
-    <script type="text/javascript" src="libs/masonry.pkgd.min.js"></script>
+    <!--<script type="text/javascript" src="libs/handlebars-v4.0.5.js"></script>
+    <script type="text/javascript" src="libs/masonry.pkgd.min.js"></script>-->
     <title></title>
   </head>
   <body>
     <header class="header">
-      <nav class="container ">
+      <div class="container-fluid">
         <div class="row banner">
           <!--make logo and blank search-->
           <form class="col-sm-3 search_form">
@@ -25,16 +25,17 @@
           <div class="col-sm-6 text-center site_logo">
             <img src="img/logo2.png" alt="Chuoi xanh logo"/>
           </div>
+
           <!--make video to background-->
           <div class="video-container">
             <video loop muted autoplay class="video-info">
-              <!--<source src="Banner.webm" type="video/webm">-->
+              <source src="img/Banner.webm" type="video/webm">
               <source src="img/Banner.mp4" type="video/mp4">
               Your browser does not support HTML5 video.
             </video>
+          </div>
         </div>
-        </div>
-      </nav>
+      </div>
     </header>
   </body>
 </html>
