@@ -2,27 +2,27 @@ body{
   background-color: #DFDFDF;
 }
 
-.header{
-  padding: 15px 0 10px 0;
-  background: #ffffff;
+.menu-container{
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: auto;
 }
 
-.header input[type=text]{
-  border-radius: 0;
-  padding-right: 20px;
+.menu-container span{
+  color: #402E2A;
+  display: inline-block;
+  height: auto;
+  width: 100px;
+  line-height: 30px;
+  position: relative;
+  padding: 10px auto;
+  font-weight: bold;
 }
 
-.search_form .glyphicon-search{
-  position: absolute;
-  right: 22px;
-  top: 50%;
-  transform: translate(0, -50%);
-  color: #cecece;
-}
-
-.site_logo img{
+.menu-container .site_logo img{
   width: 20%;
   background: transparent;
+  text-align: center;
 }
 
 .banner .video-container{
@@ -43,4 +43,22 @@ body{
   min-height: 100%;
   background-size: cover;
   margin: auto;
+}
+
+.navbar-toggle .icon-bar{
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #ffffff;
+}
+
+.navbar-toggle .icon-bar + .icon-bar{
+  margin-top: 4px;
+}
+
+
+span a:hover{
+  color: #FFD400;
+  cursor: pointer;
+  font-size: 100px;
 }
