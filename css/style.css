@@ -20,12 +20,12 @@ body{
 }
 
 .menu-container .site_logo img{
-  width: 20%;
+  width: 50%;
   background: transparent;
   text-align: center;
 }
 
-.banner .video-container{
+.video-container{
   position: fixed;
   top: 0;
   right: 0;
@@ -35,7 +35,7 @@ body{
   z-index: -100;
 }
 
-.banner .video-info{
+.video-info{
   position: absolute;
   top: 0;
   left: 0;
@@ -63,7 +63,7 @@ body{
   font-size: 100px;
 }*/
 .navbar-default .navbar-nav>li>a:hover {
-	color: red;
+	color: #FFFF00;
 	transform: scale(1.4);
 }
 .navbar-default  {
@@ -76,4 +76,11 @@ body{
 }
 .navbar-default .navbar-nav>li>a {
 	color: #ffffff;
+  padding-left: 50px;
+  font-size: 0.5em;
+}
+
+.navbar-toggle{
+  position: relative;
+  z-index: 99999;
 }
