@@ -24,25 +24,23 @@ body{
   background: transparent;
   text-align: center;
 }
+.navbar-default .navbar-nav>li>a:hover {
+	color: #FFD400;
+	transform: scale(1.4);
+}
 
 .video-container{
-  position: fixed;
   top: 0;
   right: 0;
-  bottom: 0;
   left: 0;
   overflow:hidden;
   z-index: -100;
 }
-
 .video-info{
-  position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
   min-height: 100%;
-  background-size: cover;
-  margin: auto;
 }
 
 .navbar-toggle .icon-bar{
@@ -52,20 +50,10 @@ body{
   background: #ffffff;
 }
 
-.navbar-toggle .icon-bar + .icon-bar{
+.navbar-toggle .icon-bar   .icon-bar{
   margin-top: 4px;
 }
 
-
-/*span a:hover{
-  color: #FFD400;
-  cursor: pointer;
-  font-size: 100px;
-}*/
-.navbar-default .navbar-nav>li>a:hover {
-	color: #FFFF00;
-	transform: scale(1.4);
-}
 .navbar-default  {
 	position: fixed;
 	top: 0;
@@ -74,6 +62,7 @@ body{
 	border: none;
 	background: rgba(0, 0, 0, 0.3);
 }
+
 .navbar-default .navbar-nav>li>a {
 	color: #ffffff;
   padding-left: 50px;
@@ -83,4 +72,58 @@ body{
 .navbar-toggle{
   position: relative;
   z-index: 99999;
+}
+
+.home-information-benefits .text h2{
+  line-height: 0.85em;
+  margin-bottom: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 3.5em;
+  text-transform: uppercase;
+}
+
+.home-information-benefits .text p{
+  line-height: 1.25em;
+  font-size: 1.8em;
+  display: block;
+}
+
+.btn{
+  font-weight: 600;
+  padding: 3px 8px;
+  box-shadow: none;
+  color: #000000;
+}
+
+.btn .btn-white{
+  background-color: #ffffff;
+}
+
+.home-information-benefits .benefits .list-unstyled img{
+  width: 15%;
+  padding: 10px;
+}
+
+.home-information-benefits .benefits ul{
+  padding-top: 180px;
+  display: inline-block;
+}
+
+.popover-link{
+  color: #969696;
+  cursor: help;
+  text-decoration: none;
+}
+
+.home-information{
+  padding: 65px 0 35px;
+  background: #cbcbcb url(img/InformationBackground.jpg) center no-repeat;
+  background-size: cover;
+}
+.home-information .home-information-benefits{
+  max-width: 1400px;
+  background-color: #FFC319;
+  background-image: url(img/InformationBenefitsBackground.jpg);
+  background-repeat: no-repeat;
+  background-clip: content-box;
 }
