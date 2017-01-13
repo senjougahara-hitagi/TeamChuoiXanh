@@ -50,7 +50,7 @@ body{
   background: #ffffff;
 }
 
-.navbar-toggle .icon-bar   .icon-bar{
+.navbar-toggle .icon-bar + .icon-bar{
   margin-top: 4px;
 }
 
@@ -88,42 +88,61 @@ body{
   display: block;
 }
 
-.btn{
+.home-information-benefits .btn{
+  margin-top: 20px;
+}
+.text .btn{
   font-weight: 600;
   padding: 3px 8px;
   box-shadow: none;
   color: #000000;
+  cursor: pointer;
+  text-align: center;
+
 }
 
-.btn .btn-white{
+.text .btn .btn-white{
   background-color: #ffffff;
 }
 
-.home-information-benefits .benefits .list-unstyled img{
-  width: 15%;
-  padding: 10px;
-}
-
-.home-information-benefits .benefits ul{
-  padding-top: 180px;
-  display: inline-block;
-}
-
-.popover-link{
-  color: #969696;
-  cursor: help;
-  text-decoration: none;
-}
-
 .home-information{
+  text-align: center;
   padding: 65px 0 35px;
-  background: #cbcbcb url(img/InformationBackground.jpg) center no-repeat;
+  background: #cbcbcb url(/img/InformationBackground.jpg) center center no-repeat;
   background-size: cover;
 }
+
 .home-information .home-information-benefits{
+  background-position: center right;
+  background-size: 30%;
   max-width: 1400px;
+  margin: auto;
   background-color: #FFC319;
-  background-image: url(img/InformationBenefitsBackground.jpg);
+  background-image: url(/img/InformationBenefitsBackground.jpg);
   background-repeat: no-repeat;
   background-clip: content-box;
+
+}
+
+.home-information .container-fluid{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.home-information .home-information-benefits .benefits ul{
+  padding: 80px 0 ;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.home-information .home-information-benefits .benefits ul li{
+  display: inline-block;
+  height: 3%;
+  width: 75px;
+
+}
+.home-information-benefits .benefits .list-unstyled img{
+  padding-top: 5px;
+  padding-left: 5px;
+  width: 75px;
 }
