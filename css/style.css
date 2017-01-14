@@ -1,11 +1,15 @@
 body{
   background-color: #DFDFDF;
 }
-
 .menu-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: auto;
+  z-index: 9999;
 }
 
 .menu-container span{
@@ -28,7 +32,6 @@ body{
 	color: #FFD400;
 	transform: scale(1.4);
 }
-
 .video-container{
   top: 0;
   right: 0;
@@ -37,8 +40,6 @@ body{
   z-index: -100;
 }
 .video-info{
-  top: 0;
-  left: 0;
   min-width: 100%;
   min-height: 100%;
 }
@@ -55,8 +56,7 @@ body{
 }
 
 .navbar-default  {
-	position: fixed;
-	top: 0;
+  position: absolute;
 	left: 0;
 	right: 0;
 	border: none;
@@ -65,8 +65,8 @@ body{
 
 .navbar-default .navbar-nav>li>a {
 	color: #ffffff;
-  padding-left: 50px;
-  font-size: 0.5em;
+  padding: 30px 30px;
+  font-size: 1.5em;
 }
 
 .navbar-toggle{
@@ -121,7 +121,6 @@ body{
   background-image: url(/img/InformationBenefitsBackground.jpg);
   background-repeat: no-repeat;
   background-clip: content-box;
-
 }
 
 .home-information .container-fluid{
@@ -145,4 +144,116 @@ body{
   padding-top: 5px;
   padding-left: 5px;
   width: 75px;
+}
+
+
+.slogan {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 220px;
+  font-size: 60px;
+  line-height: 3em;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-shadow: 0 0 20px black;
+  text-align: center;
+  color: #ffffff;
+}
+@media (max-width: 1225px){
+  .navbar-default .navbar-nav>li>a {
+  	color: #ffffff;
+    padding: 30px 20px;
+    font-size: 1.2em;
+  }
+}
+@media (max-width: 927px){
+  .navbar-default .navbar-nav>li>a {
+  	color: #ffffff;
+    padding: 30px 10px;
+    font-size: 1em;
+  }
+}
+@media (max-width: 768px){
+  .slogan {
+    top: 140px;
+    font-size: 48px;
+  }
+  .menu-container .site_logo img{
+    width: 30%;
+    background: transparent;
+    text-align: center;
+    float: left;
+  }
+  .menu-container{
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: auto;
+    z-index: 9999;
+  }
+  .header-menu {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    background: none;
+    border: none;
+  }
+  .nav.navbar-nav.navbar-collapse {
+    width: 200px;
+  }
+  .video-container{
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+    overflow:hidden;
+    z-index: -100;
+  }
+  .video-info{
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+
+.home_container {
+  position: relative;
+  background: #ffffff;
+  text-align: center;
+  height: auto;
+}
+.home_container h3 {
+  padding: 5px 0;
+  line-height: 30px;
+  font-size: 25px;
+}
+.home_container h3>span {
+  color: red;
+  font-weight: bold;
+  font-family: "Stabile W00 Regular", Helvetica, Arial, sans-serif;
+}
+.home_container .item_home_container img {
+  width: 80%;
+}
+.home_container .item_home_container .text {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0B610B;
+}
+
+
+.chat_button {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  background: transparent;
+  border-radius: 100%;
+  border-color: green;
+}
+.chat_button img {
+  width: 50px;
+  height: 50px;
 }
