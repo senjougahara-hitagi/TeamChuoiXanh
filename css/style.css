@@ -98,7 +98,7 @@ body{
   color: #000000;
   cursor: pointer;
   text-align: center;
-
+  bottom: 0;
 }
 
 .text .btn .btn-white{
