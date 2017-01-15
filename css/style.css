@@ -28,9 +28,21 @@ body{
   background: transparent;
   text-align: center;
 }
+.underline_menu {
+  position: relative;
+  height: 3px;
+  width: auto;
+  background: yellow;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
 .navbar-default .navbar-nav>li>a:hover {
 	color: #FFD400;
-	transform: scale(1.4);
+	transform: scale(1.2);
+}
+.navbar-default .navbar-nav>li:hover .underline_menu {
+  opacity: 1;
 }
 .video-container{
   top: 0;
@@ -67,6 +79,7 @@ body{
 	color: #ffffff;
   padding: 30px 30px;
   font-size: 1.5em;
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar-toggle{
@@ -106,6 +119,7 @@ body{
 }
 
 .home-information{
+  position: relative;
   text-align: center;
   padding: 65px 0 35px;
   background: #cbcbcb url(/img/InformationBackground.jpg) center center no-repeat;
@@ -113,9 +127,11 @@ body{
 }
 
 .home-information .home-information-benefits{
+  position: relative;
   background-position: center right;
   background-size: 30%;
   max-width: 1400px;
+  height: 382px;
   margin: auto;
   background-color: #FFC319;
   background-image: url(/img/InformationBenefitsBackground.jpg);
@@ -126,19 +142,22 @@ body{
 .home-information .container-fluid{
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 25px;
 }
 
 .home-information .home-information-benefits .benefits ul{
-  padding: 80px 0 ;
-  margin-top: 0;
+  position: absolute;
+  top: 120px;
+  padding: 5px 0 ;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
 .home-information .home-information-benefits .benefits ul li{
+  position: relative;
   display: inline-block;
-  height: 3%;
-  width: 75px;
-
+  height: auto;
+  width: auto;
 }
 .home-information-benefits .benefits .list-unstyled img{
   padding-top: 5px;
@@ -169,7 +188,7 @@ body{
 @media (max-width: 927px){
   .navbar-default .navbar-nav>li>a {
   	color: #ffffff;
-    padding: 30px 10px;
+    padding: 30px 15px;
     font-size: 1em;
   }
 }
@@ -178,12 +197,7 @@ body{
     top: 140px;
     font-size: 48px;
   }
-  .menu-container .site_logo img{
-    width: 30%;
-    background: transparent;
-    text-align: center;
-    float: left;
-  }
+
   .menu-container{
     position: relative;
     top: 0;
@@ -192,17 +206,41 @@ body{
     font-weight: bold;
     margin-top: 0px;
     margin-bottom: auto;
-    z-index: 9999;
+    height: 150px;
   }
-  .header-menu {
+  .navbar-default  {
     position: absolute;
-    right: 0;
-    top: 20px;
-    background: none;
+  	left: 0;
+  	right: 0;
+  	border: none;
+  	background: #000000;
+    height: 150px;
+  }
+  .menu-container .site_logo img{
+    width: 150px;
+    background: transparent;
+    text-align: center;
+    float: left;
+  }
+  .header-menu button{
+    position: absolute;
+    right: 10px;
+    top: 70px;
+    background: #ffffff;
     border: none;
   }
   .nav.navbar-nav.navbar-collapse {
+    position: absolute;
+    right: 0;
+    /*left: 0;*/
+    top: 140px;
     width: 200px;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+  }
+  .navbar-default .nav.navbar-nav.navbar-collapse>li>a:hover {
+  	color: #FFD400;
+    transform: scale(1);
   }
   .video-container{
     position: relative;
@@ -256,4 +294,49 @@ body{
 .chat_button img {
   width: 50px;
   height: 50px;
+}
+
+.map_container {
+  animation-name: zoomInLeft;
+  position: relative;
+}
+.map_container .slogan_map {
+  padding: 50px 0px;
+  font-size: 3em;
+  text-align: center;
+  font-family: cursive;
+  color: #ffffff;
+  background: #82FA58;
+}
+.map_container .slogan_map span {
+  font-size: 1.2em;
+  color: #000000;
+}
+.map_container :nth-child(3) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.map_container .map iframe{
+  width: 100%;
+}
+
+
+
+
+div.pop-up {
+  /*opacity: 0;*/
+  display: none;
+  position: absolute;
+  width: 280px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 100%;
+  bottom: 80px;
+  left: -100px;
 }
