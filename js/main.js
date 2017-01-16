@@ -16,4 +16,6 @@ $(document).ready(function(){
       $(event.target).parent().find('div.pop-up').hide();
     });
   });
+
+  document.getElementById('datestamp').innerHTML=Date();
 });

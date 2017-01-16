@@ -93,16 +93,22 @@ body{
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 3.5em;
   text-transform: uppercase;
+  margin-top: 70px;
 }
 
 .home-information-benefits .text p{
   line-height: 1.25em;
   font-size: 1.8em;
   display: block;
+  margin-left: 30px;
 }
 
 .home-information-benefits .btn{
   margin-top: 20px;
+}
+
+.home-information-benefits .text a{
+  background-color: #ffffff;
 }
 .text .btn{
   font-weight: 600;
@@ -112,10 +118,6 @@ body{
   cursor: pointer;
   text-align: center;
   bottom: 0;
-}
-
-.text .btn .btn-white{
-  background-color: #ffffff;
 }
 
 .home-information{
@@ -163,8 +165,27 @@ body{
   padding-top: 5px;
   padding-left: 5px;
   width: 75px;
+  margin-left: 15px;
 }
 
+div.pop-up {
+  /*opacity: 0;*/
+  display: none;
+  position: absolute;
+  width: 280px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 100%;
+  bottom: 80px;
+  left: -100px;
+}
+
+.pop-up h3{
+  font-family: 'Gloria Hallelujah', cursive;
+}
 
 .slogan {
   position: absolute;
@@ -268,10 +289,14 @@ body{
   line-height: 30px;
   font-size: 25px;
 }
-.home_container h3>span {
-  color: red;
+.home_container span {
+  color: #FFD400;
   font-weight: bold;
-  font-family: "Stabile W00 Regular", Helvetica, Arial, sans-serif;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+.home_container .text{
+  font-family: 'Gloria Hallelujah', cursive;
 }
 .home_container .item_home_container img {
   width: 80%;
@@ -279,7 +304,7 @@ body{
 .home_container .item_home_container .text {
   font-size: 30px;
   font-weight: bold;
-  color: #0B610B;
+  color: #000000;
 }
 
 
@@ -292,8 +317,8 @@ body{
   border-color: green;
 }
 .chat_button img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
 }
 
 .map_container {
@@ -323,20 +348,27 @@ body{
   width: 100%;
 }
 
+.home-product{
+  position: relative;
+  background-position: center;
+  background-size: 100%;
+  max-width: 1400px;
+  height: 682px;
+  margin: auto;
+  background-image: url(/img/RecipesBackground.jpg);
+  background-repeat: no-repeat;
+  background-clip: content-box;
+}
 
+.home-product .title h2{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 50px;
+}
 
+.home-product .title p{
+  font-size: 25px;
+}
 
-div.pop-up {
-  /*opacity: 0;*/
-  display: none;
-  position: absolute;
-  width: 280px;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.4);
-  color: #ffffff;
-  border: none;
-  border-radius: 20px;
-  font-size: 100%;
-  bottom: 80px;
-  left: -100px;
+.home-product .home-product-info img{
+  max-width: 40px;
 }
