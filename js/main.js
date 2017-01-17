@@ -3,16 +3,21 @@ $(document).ready(function(){
     $("#chat_modal").modal("show");
   });
 
-  // $('body').scroll(function() {
-  //   $( ".map_container" ).append("<div></div>");
+  // $(function() {
+    // $(".map_container .map iframe").scroll( function() {
+      // console.log("aaaa");
+      // $(event.target).parent().find('div.over_map').show();
+    // }, function() {
+      // console.log("000");
+      // $(event.target).parent().find('div.over_map').hide();
+  //   });
   // });
+
 
   $(function() {
     $('img.trigger').hover(function() {
-      // $(event.target).parent().find('div.pop-up').css('opacity', 1);
       $(event.target).parent().find('div.pop-up').show();
     }, function() {
-      // $(event.target).parent().find('div.pop-up').css('opacity', 0);
       $(event.target).parent().find('div.pop-up').hide();
     });
   });
