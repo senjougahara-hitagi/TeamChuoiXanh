@@ -446,6 +446,11 @@ div.pop-up {
   border-radius: 100%;
   border: none;
 }
+
+.chat_button:active,
+.chat_button:focus{
+  outline: 0 none;
+}
 .chat_button img {
   width: 100px;
   height: 100px;
@@ -500,5 +505,166 @@ div.pop-up {
 }
 
 .home-product .home-product-info img{
-  max-width: 40px;
+  max-width: 400px;
+  margin-left: 15px;
+  margin-top: 50px;
+  border: 20px solid #ffffff;
+}
+
+/*---------------------------*/
+.homes-information{
+
+  position: relative;
+  text-align: center;
+  background-image: url(/img/InformationBackground.jpg);
+  background-size: cover;
+  height: 500px;
+
+}
+
+.homes-information .homes-information-benefits{
+
+  position: relative;
+  background-position: center right;
+  background-size: 100%;
+  max-width: 1500px;
+  height: 400px;
+  margin: auto;
+  /*background-color: #FFC319;*/
+/*background:  url(/img/background.jpg);*/
+  background-repeat: no-repeat;
+  background-clip: content-box;
+
+}
+
+.homes-information .container-fluid{
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+.homes-information-benefits .text_buy h3 {
+  line-height: 1em;
+  margin-bottom: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 3em;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+
+}
+
+.homes-information-benefits .text p {
+  line-height: 1.1em;
+  font-size: 1.5em;
+  display: block;
+  margin-left: 30px;
+}
+.row .benefit_container{
+  position: relative;
+  background-position: center right;
+  background-size: 100%;
+  max-width: 570px;
+  height: 400px;
+  margin: auto;
+}
+.benefit_container .buy_container{
+  position: relative;
+  max-width: 570px;
+  height: 450px;
+  background-image:  url(/img/home_buy.png);
+  border-radius: 8%;
+  margin-top: 40px;
+}
+.benefit_container .buy_container img{
+position: relative;
+ width: 500px;
+height: 400px;
+
+}
+.homes-information-benefits .row .text{
+  margin-top: 50px;
+}
+.homes-information-benefits .row .text .btn{
+  background:
+}
+.profile_wrapper input[type=text]{
+  border-radius: 0;
+  padding-right: 23px;
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+  border-radius: 2px;
+  line-height: 34px;
+}
+.tel input[type=tel]{
+  border-radius: 0;
+  padding-right: 23px;
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+   line-height: 32px;
+}
+.profile_group .tel{
+  margin-top: 11px;
+
+}
+
+.adress input[type=adress]{
+  border-radius: 0;
+  padding-right: 23px;
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+  line-height: 32px;
+
+}
+.profile_group .adress{
+  margin-top: 11px;
+
+}
+
+.profile_group .message textarea{
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+  line-height: 20px;
+  width: 512px;
+}
+.profile_group .message{
+  margin-top: 20px;
+
+}
+h5 {
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+}
+h5 {
+    font-family: "Roboto Slab", Arial, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+.homes-information-benefits .text h2 {
+  line-height: 2em;
+  margin-bottom: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 4em;
+  text-transform: uppercase;
+
+}
+.homes-information-benefits .text p {
+  line-height: 1.5em;
+  font-size: 2.5em;
+  display: block;
+  margin-left: 30px;
+
+}
+.profile_group button{
+  background: #000000;
+  margin-top: 15px;
+  width: 150px;
+  height: 50px;
+  border-radius: 15%;
+  background-image: url(/img/button.png);
+  background-position:top;
+
+
+}
+.profile_group a{
+  color: #ffffff;
 }
