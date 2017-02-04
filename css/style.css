@@ -1,5 +1,5 @@
 body{
-  background-color: #DFDFDF;
+  background-color: #ffffff;
 }
 .menu-container{
   position: fixed;
@@ -161,10 +161,9 @@ body{
   width: auto;
 }
 .home-information-benefits .benefits .list-unstyled img{
-  padding-top: 5px;
-  padding-left: 5px;
   width: 75px;
-  margin-left: 15px;
+  margin-left: 7px;
+  margin-right: 7px;
 }
 
 div.pop-up {
@@ -180,7 +179,6 @@ div.pop-up {
   bottom: 80px;
   left: -100px;
 }
-
 .pop-up h3{
   font-family: 'Gloria Hallelujah', cursive;
 }
@@ -204,26 +202,23 @@ div.pop-up {
     font-size: 1.2em;
   }
   .home-information-benefits .benefits .list-unstyled img{
-    padding-top: 5px;
-    padding-left: 5px;
     width: 70px;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 @media (max-width: 1100px){
   .home-information-benefits .benefits .list-unstyled img{
-    padding-top: 5px;
-    padding-left: 5px;
     width: 60px;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 }
 @media (max-width: 970px){
   .home-information-benefits .benefits .list-unstyled img{
-    padding-top: 5px;
-    padding-left: 5px;
     width: 50px;
-    margin-left: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
   .home-information-benefits .text h2 {
@@ -251,10 +246,9 @@ div.pop-up {
 }
 @media (max-width: 868px){
   .home-information-benefits .benefits .list-unstyled img{
-    padding-top: 5px;
-    padding-left: 5px;
     width: 45px;
     margin-left: 5px;
+    margin-right: 5px;
   }
 }
 @media (max-width: 768px){
@@ -363,24 +357,9 @@ div.pop-up {
     margin-top: 20px;
     margin-bottom: 10px;
   }
-  .home-information-benefits .benefits .list-unstyled img{
-    padding-top: 5px;
-    width: 45px;
-  }
   .home-information .home-information-benefits{
-    position: relative;
-    background-position: center right;
-    background-size: 30%;
-    max-width: 1400px;
-    height: 500px;
-    margin: auto;
-    background-color: #FFC319;
-    background-image: url(/img/InformationBenefitsBackground.jpg);
-    background-repeat: no-repeat;
-    background-clip: content-box;
+    height: 400px;
   }
-}
-@media (max-width: 380px){
   .home-information-benefits .text h2 {
     line-height: 1em;
     margin-bottom: 5px;
@@ -395,17 +374,15 @@ div.pop-up {
     display: block;
     margin-left: 30px;
   }
+}
+@media (max-width: 236px){
   .home-information .home-information-benefits{
-    position: relative;
-    background-position: center right;
-    background-size: 30%;
-    max-width: 1400px;
-    height: 600px;
-    margin: auto;
-    background-color: #FFC319;
-    background-image: url(/img/InformationBenefitsBackground.jpg);
-    background-repeat: no-repeat;
-    background-clip: content-box;
+    height: 470px;
+  }
+}
+@media (max-width: 189px){
+  .home-information .home-information-benefits{
+    height: 570px;
   }
 }
 .home_container {
@@ -531,7 +508,7 @@ div.pop-up {
   height: 400px;
   margin: auto;
   /*background-color: #FFC319;*/
-/*background:  url(/img/background.jpg);*/
+  /*background:  url(/img/background.jpg);*/
   background-repeat: no-repeat;
   background-clip: content-box;
 
@@ -575,9 +552,9 @@ div.pop-up {
   margin-top: 40px;
 }
 .benefit_container .buy_container img{
-position: relative;
- width: 500px;
-height: 400px;
+  position: relative;
+  width: 500px;
+  height: 400px;
 
 }
 .homes-information-benefits .row .text{
@@ -659,12 +636,143 @@ h5 {
   margin-top: 15px;
   width: 150px;
   height: 50px;
-  border-radius: 15%;
+  border-radius: 7px;
   background-image: url(/img/button.png);
-  background-position:top;
-
-
+  background-position: 3px -2px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .profile_group a{
   color: #ffffff;
+}
+/*-----------------------------*/
+.shop_sales_section {
+  padding: 15px 0px;
+}
+.shop_sales_section .col-md-3.col-xs-6 {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.banner_container {
+  padding: 0px 2px;
+  margin-bottom: 0px;
+}
+.banner_container>*{
+  display: inline;
+  text-align: center;
+}
+.shop_sales_section .banner_element {
+  font-size: 15px;
+  padding: 12px;
+  line-height: 1em;
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all .2s;
+  background: rgb(205,214,218);
+}
+.shop_sales_section .banner_element:hover {
+  color: rgb(255,255,255);
+  background: rgb(89,109,120);
+  text-decoration: none;
+}
+
+.shop_sales_section .image_container {
+  position: relative;
+  overflow: hidden;
+  margin-top: 4px;
+}
+.shop_sales_section img {
+  width: 100%;
+  transition:all .4s linear;
+}
+.shop_sales_section .image_container .overlay_on_shop_list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.shop_sales_section .image_container:hover img {
+  transform: scale(1.2);
+}
+.shop_sales_section .image_container .overlay_on_shop_list h3{
+  position: absolute;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-shadow: 0 0 20px black;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-100%);
+  font-size: 40px;
+}
+.shop_sales_section .image_container .overlay_on_shop_list .statistic_container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.image_container .trigger_of_pop_up {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+}
+
+#list_shop .item {
+  position: relative;
+}
+.pop_up_on_shop_list {
+  position: absolute;
+  top: 0;
+  /*bottom: 0;*/
+  width: auto;
+  height: inherit;
+  transform: translateX(100%);
+  background: rgba(205,214,218,0.95);
+  display: block;
+  margin-top: 4px;
+  color: #000000;
+  z-index: 2;
+  display: none;
+  word-wrap: break-word;
+}
+.pop_up_on_shop_list img {
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0px 10px 5px 5px;
+}
+.pop_up_on_shop_list h3 {
+  font-weight: bold;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+.pop_up_on_shop_list>p {
+  padding: 0px 10px;
+}
+
+
+#list_sales {
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+}
+
+#list_sales>.item {
+  position: absolute;
+}
+#list_sales .item_container {
+  height: 100px;
+  width: 200px;
+  background: red;
 }
