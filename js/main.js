@@ -63,7 +63,16 @@ $(document).ready(function(){
 //-----------------------------
   $( function() {
     $( "#tab-list" ).tabs({
-      event: "mouseover"
+      event: "mouseover",
+      activate: function(event, ui){
+        (ui.oldTab.children()).css(
+          "background", "rgb(205,214,218)"
+        );
+        (ui.newTab.children()).css({
+          "background": "rgb(89,109,120)",
+          "color": "rgb(255,255,255)"
+        });
+      }
     });
   } );
 
@@ -100,6 +109,23 @@ $(document).ready(function(){
   });
 
   // ---------------------------
+
+  $('#navbar-collapse li a').on('click', function(event) {
+    $(this).parent().parent().find('a').removeClass('active');
+    $(this).addClass('active');
+  });
+
+  $(window).on('scroll', function() {
+    $('.target').each(function() {
+      if($(window).scrollTop() >= $(this).offset().top - $(".navbar.navbar-default").height())
+      {
+        var id = $(this).attr('id');
+        console.log(id);
+        $('#navbar-collapse li a').removeClass('active');
+        $('#navbar-collapse li a[href="#'+ id +'"]').addClass('active');
+      }
+    });
+  });
 });
 
 // ----------------------------

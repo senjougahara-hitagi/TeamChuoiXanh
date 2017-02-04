@@ -37,11 +37,11 @@ body{
   transform: translateY(-10px);
   transition: all 0.3s ease-in-out;
 }
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a.active {
 	color: #FFD400;
 	transform: scale(1.2);
 }
-.navbar-default .navbar-nav>li:hover .underline_menu {
+.navbar-default .navbar-nav>li:hover .underline_menu, .navbar-default .navbar-nav>li:active .underline_menu {
   opacity: 1;
 }
 .video-container{
