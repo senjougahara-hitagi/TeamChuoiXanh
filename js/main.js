@@ -60,6 +60,7 @@ $(document).ready(function(){
   });
 // ----------------------------
 
+//-----------------------------
   $( function() {
     $( "#tab-list" ).tabs({
       event: "mouseover"
@@ -122,21 +123,17 @@ window.onload = function(){
   });
 
 }
-// ---------------------------
-$(window).on("scroll", function(e){
-    if($(window).scrollTop() + $('.navbar.navbar-default').height() >= $('#home').height()){
-      $('.site_logo img').css({
-        "width": "37%"
-      });
-      $('.navbar.navbar-default').css({
-        "background":"rgba(0, 0, 0, 1)"
-      });
-    }else{
-      $('.site_logo img').css({
-        "width": "50%"
-      });
-      $('.navbar.navbar-default').css({
-        "background":"rgba(0, 0, 0, 0.3)"
-      });
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
     }
   });
+});

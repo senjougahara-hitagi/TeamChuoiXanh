@@ -310,10 +310,10 @@
       <div class="container-fluid" id="tab-list">
         <ul class="row banner_container">
           <li>
-            <a class="col-md-3 col-xs-6 banner_element" href="#list_shop">Shop list</a>
+            <a class="col-md-3 col-xs-6 banner_element" href="#list_shop" id="shop">Shop list</a>
           </li>
           <li>
-            <a class="col-md-3 col-xs-6 banner_element" href="#list_sales">Khuyến mãi</a>
+            <a class="col-md-3 col-xs-6 banner_element" href="#list_sales" id="sales">Khuyến mãi</a>
           </li>
         </ul>
 
@@ -374,7 +374,8 @@
         <div class="item_sales">
           <img src="{{imageUrl}}">
           <h3>{{Name}}</h3>
-          <p></p>
+          <p>{{title}}</p>
+          <p>{{content}}</p>
         </div>
       {{/each}}
     </script>
