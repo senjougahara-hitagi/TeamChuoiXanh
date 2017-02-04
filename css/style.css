@@ -189,9 +189,9 @@ div.pop-up {
   right: 0;
   left: 0;
   top: 220px;
-  font-size: 100px;
+  font-size: 70px;
   line-height: 3em;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
   text-shadow: 0 0 20px black;
   text-align: center;
   color: #ffffff;
@@ -403,9 +403,6 @@ div.pop-up {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
-.home_container .text{
-  font-family: 'Gloria Hallelujah', cursive;
-}
 .home_container .item_home_container img {
   width: 80%;
 }
@@ -441,7 +438,7 @@ div.pop-up {
   padding: 50px 0px;
   font-size: 3em;
   text-align: center;
-  font-family: cursive;
+  font-family: 'Gloria Hallelujah', cursive;
   color: #ffffff;
   background: #82FA58;
 }
@@ -562,9 +559,9 @@ div.pop-up {
     margin-left: 50px;
 
   }
-  .homes-information-benefits .text p {
+  /*.homes-information-benefits .text p {
     position: fixed;
-  }
+  }*/
 
 }
 
@@ -618,7 +615,6 @@ h5 {
     font-size: 20px;
     line-height: 20px;
     text-align: center;
-    font-family: "Roboto Slab", Arial, Tahoma, sans-serif;
     font-weight: 700;
 }
 
@@ -636,7 +632,6 @@ h5 {
   font-size: 2.5em;
   display: block;
   margin-left: 30px;
-  font-family: 'Gloria Hallelujah', cursive;
 
 }
 .profile_group button{
@@ -943,8 +938,6 @@ h5 {
   font-size: 2.5em;
   display: block;
   margin-left: 30px;
-  font-family: 'Gloria Hallelujah', cursive;
-
 }
 .profile_group button{
   background: #000000;
@@ -970,7 +963,7 @@ h5 {
 }
 
 .home_end a{
-  font-size: 45px;
+  font-size: 50px;
   margin-top: 30px;
   color: #000000;
 }
