@@ -926,7 +926,6 @@ h5 {
     font-size: 20px;
     line-height: 20px;
     text-align: center;
-    font-family: "Roboto Slab", Arial, Tahoma, sans-serif;
     font-weight: 700;
 }
 
@@ -962,15 +961,16 @@ h5 {
   color: #ffffff;
 }
 
-.home_end {
+.home_end{
   background: #e8a600;
   background-image: url(/img/home_end_2.png);
   background-repeat: no-repeat;
   background-position: center top;
   width: 100%;
 }
-.home_end .row a{
-  font-size: 50px;
+
+.home_end a{
+  font-size: 45px;
   margin-top: 30px;
   color: #000000;
 }
