@@ -47,15 +47,12 @@
             using: using
           });
         }
-
         function animate( to ) {
           $( this ).stop( true, false ).animate( to );
         }
-
         left( $( "#list_sales div.item:eq(0)" ), animate );
         center( $( "#list_sales div.item:eq(1)" ), animate );
         right( $( "#list_sales div.item:gt(1)" ), animate );
-
         function next( event ) {
           event.preventDefault();
           center( $( "#list_sales div.item:eq(2)" ), animate );
@@ -70,11 +67,9 @@
         }
         $( "#previous" ).on( "click", previous );
         $( "#next" ).on( "click", next );
-
         $( "#list_sales div.item" ).on( "click", function( event ) {
           $( "#list_sales div.item" ).index( this ) === 0 ? previous( event ) : next( event );
         });
-
         $( window ).on( "resize", function() {
           left( $( "#list_sales div.item:eq(0)" ), animate );
           center( $( "#list_sales div.item:eq(1)" ), animate );
@@ -447,7 +442,6 @@
         <br>
         Lúc đến - lúc đi, Gặp thì nên MUA LUÔN - Vừa dùng, vừa để dành!
       </div>
-
       <div class="map">
         <iframe class="gg_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.7204050415703!2d105.826928117508!3d21.00384192661793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ac8087e445af%3A0x2b8a31969e88b9df!2zTmjDoCBow6BuZyBW4bqhbiBM4buZYw!5e0!3m2!1svi!2s!4v1484387021211" width="600" height="450" frameborder="0" style="border:0" allowfullscreen>
         </iframe>
@@ -459,7 +453,7 @@
     <section class="homes-information">
       <div class="homes-information-benefits container-fluid">
         <div class="row">
-          <div class="col-xs-12 col-sm-6">
+          <div class="col-xs-6 col-sm-6">
             <div class="text">
               <h2>
                 COME WITH US NOW!
@@ -468,41 +462,66 @@
               </p>
             </div>
           </div>
-          <!-- <div class="row"> -->
-            <div class="col-xs-12 col-sm-6 benefit_container">
-              <div class="buy_container">
-                <div class="text_buy">
-                  <h3>
-                    WELCOME TO US!
-                  </h3>
-                  <h5>
-                    "Sign up to receive the worst banana!"
-                  </h5>
-                </div>
+          <div class="col-xs-12 col-sm-6 benefit_container">
+            <div class="buy_container text-center">
+              <div class="text_buy text-center">
+                <h3>
 
-                <div class="col-sm-3 profile_group">
-                  <div class="profile_wrapper">
-                    <input type="text" name="text" value="" size="65" class="name" aria-required="true" aria-invalid="false" placeholder="Họ và tên (yêu cầu):">
-                  </div>
-                  <div class=" tel">
-                    <input type="tel" name="tel" value="" size="65" class="tel"  placeholder="Điện thoại (yêu cầu):">
-                  </div>
-                  <div class="adress">
-                    <input type="adress" name="adress" value="" size="65" class="adress"  placeholder="Địa chi (yêu cầu):">
-                  </div>
-                  <div class="message">
-                    <textarea name="your-message" size="100" rows="4" >Chọn mua (loại, số lượng, yêu cầu khác):</textarea>
-                  </div>
-                  <button type="button"  class="plus_button">
-                    <a class="buy now">BUY  NOW</a>
-                  </button>
-                </div>
+                WELCOME TO US!
+                </h3>
+                <h5>
+                "Sign up to receive the worst banana!"
+                </h5>
+              </div>
+
+            <div class="col-sm-12 profile_group">
+              <div class="profile_wrapper">
+                 <input type="text" name="text" value="" size="65" class="name" aria-required="true" aria-invalid="false" placeholder="First Name (Request):">
+              </div>
+             <div class=" tel">
+              <input type="tel" name="tel" value="" size="65" class="tel"  placeholder="Phone number (Request):">
+             </div>
+             <div class="adress">
+              <input type="adress" name="adress" value="" size="65" class="adress"  placeholder="Address (Request):">
+             </div>
+             <div class="message">
+              <textarea name="your-message" size="100" rows="4" >Chọn mua (the type, quantity and other requirements):</textarea>
+             </div>
+             <button type="button"  class="plus_button">
+               <a class="buy now">BUY  NOW</a>
               </div>
             </div>
-          <!-- </div> -->
+          </div>
         </div>
       </div>
-    </section>
+  </section>
+
+  <section class="home_end ">
+    <div class="row text-center">
+      <div class=" footer-section-1">
+      <a href="http://www.facebook.com" target="_blank">CHUỐI XANH .COM</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="row end_1 text-center">
+    <div class="footer-section-2 ">
+      <a href="#" target="_blank">Điều kiện và Điều khoản</a>
+      "
+      ||
+      "
+      <a href="#" target="_blank">Chính sách và pháp luật</a>
+      "
+      ||
+      "
+      <a href="#" target="_blank">Đãi Ngộ</a>
+      "
+      ||
+      "
+      <a href="#" target="_blank">Hướng dẫn mua sản phẩm</a>
+    </div>
+    <p>--------------------------------------------------</p>
+  </div>
 
     <!-- button box-chat -->
     <!-- <button type="button" class="chat_button" data-item-id="chat_modal">
@@ -513,7 +532,6 @@
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-body" id="item_modal_body">
-
             <div class="image_chat">
               <img src="img/Speech_bubble.png">
             </div>
@@ -525,7 +543,6 @@
               </form>
             </div>
           </div>
-
         </div>
       </div>
     </div> -->

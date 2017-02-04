@@ -144,6 +144,7 @@ body{
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 25px;
+  width: 100%;
 }
 
 .home-information .home-information-benefits .benefits ul{
@@ -463,8 +464,7 @@ div.pop-up {
 .home-product{
   position: relative;
   background-position: center;
-  max-width: 1400px;
-  height: 682px;
+  width: 100%;
   margin: auto;
   background-image: url(/img/RecipesBackground.jpg);
   background-size: cover;
@@ -482,20 +482,19 @@ div.pop-up {
 }
 
 .home-product .home-product-info img{
-  max-width: 400px;
+  width: 95%;
   margin-left: 15px;
   margin-top: 50px;
   border: 20px solid #ffffff;
 }
 
-/*---------------------------*/
 .homes-information{
 
   position: relative;
   text-align: center;
-  background-image: url(/img/InformationBackground.jpg);
+  background:url(/img/InformationBackground.jpg);
   background-size: cover;
-  height: 500px;
+  height: 100%;
 
 }
 
@@ -504,21 +503,16 @@ div.pop-up {
   position: relative;
   background-position: center right;
   background-size: 100%;
-  max-width: 1500px;
-  height: 400px;
+  max-width: 100%;
+  height: 100%;
   margin: auto;
-  /*background-color: #FFC319;*/
-  /*background:  url(/img/background.jpg);*/
   background-repeat: no-repeat;
   background-clip: content-box;
-
-}
-
-.homes-information .container-fluid{
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 15px;
 }
+
 .homes-information-benefits .text_buy h3 {
   line-height: 1em;
   margin-bottom: 5px;
@@ -537,32 +531,44 @@ div.pop-up {
 }
 .row .benefit_container{
   position: relative;
-  background-position: center right;
   background-size: 100%;
-  max-width: 570px;
-  height: 400px;
+  max-width:45%;
+  max-height: 100%;
   margin: auto;
-}
-.benefit_container .buy_container{
-  position: relative;
-  max-width: 570px;
-  height: 450px;
   background-image:  url(/img/home_buy.png);
-  border-radius: 8%;
+  border-radius: 10%;
   margin-top: 40px;
-}
-.benefit_container .buy_container img{
-  position: relative;
-  width: 500px;
-  height: 400px;
+  padding: inherit;
 
 }
-.homes-information-benefits .row .text{
-  margin-top: 50px;
+
+
+@media (max-width: 600px){
+  .row .benefit_container{
+    position: relative;
+    background-size: 100%;
+    max-width:90%;
+    max-height: 100%;
+    margin: auto;
+    background-image:  url(/img/home_buy.png);
+    border-radius: 10%;
+    margin-top: 40px;
+    margin-left: 10px;
+
+  }
+  .homes-information-benefits .row .text{
+    margin-top: 30px;
+
+    margin-left: 50px;
+
+  }
+  .homes-information-benefits .text p {
+    position: fixed;
+  }
+
 }
-.homes-information-benefits .row .text .btn{
-  background:
-}
+
+
 .profile_wrapper input[type=text]{
   border-radius: 0;
   padding-right: 23px;
@@ -570,6 +576,7 @@ div.pop-up {
   border: 2px solid #c49b2c;
   border-radius: 2px;
   line-height: 34px;
+  width: 100%;
 }
 .tel input[type=tel]{
   border-radius: 0;
@@ -577,6 +584,7 @@ div.pop-up {
   background-color: #f5f5f5;
   border: 2px solid #c49b2c;
    line-height: 32px;
+   width: 100%;
 }
 .profile_group .tel{
   margin-top: 11px;
@@ -589,7 +597,7 @@ div.pop-up {
   background-color: #f5f5f5;
   border: 2px solid #c49b2c;
   line-height: 32px;
-
+  width: 100%;
 }
 .profile_group .adress{
   margin-top: 11px;
@@ -600,28 +608,27 @@ div.pop-up {
   background-color: #f5f5f5;
   border: 2px solid #c49b2c;
   line-height: 20px;
-  width: 512px;
+  width: 100%;
 }
 .profile_group .message{
   margin-top: 20px;
 
 }
 h5 {
-    font-size: 15px;
+    font-size: 20px;
     line-height: 20px;
     text-align: center;
-}
-h5 {
     font-family: "Roboto Slab", Arial, Tahoma, sans-serif;
     font-weight: 700;
 }
 
 .homes-information-benefits .text h2 {
-  line-height: 2em;
+  line-height: 1.5em;
   margin-bottom: 5px;
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 4em;
   text-transform: uppercase;
+  margin-top: 50px;
 
 }
 .homes-information-benefits .text p {
@@ -629,6 +636,7 @@ h5 {
   font-size: 2.5em;
   display: block;
   margin-left: 30px;
+  font-family: 'Gloria Hallelujah', cursive;
 
 }
 .profile_group button{
@@ -636,16 +644,29 @@ h5 {
   margin-top: 15px;
   width: 150px;
   height: 50px;
-  border-radius: 7px;
+  border-radius: 15%;
   background-image: url(/img/button.png);
-  background-position: 3px -2px;
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-position:top;
+
+
 }
 .profile_group a{
   color: #ffffff;
 }
-/*-----------------------------*/
+
+.home_end {
+  background: #e8a600;
+  background-image: url(/img/home_end_2.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+}
+.home_end .row a{
+  font-size: 50px;
+  margin-top: 30px;
+  color: #000000;
+}
+
 .shop_sales_section {
   padding: 15px 0px;
 }
@@ -775,4 +796,182 @@ h5 {
   height: 100px;
   width: 200px;
   background: red;
+}
+.homes-information{
+
+  position: relative;
+  text-align: center;
+  background:url(/img/InformationBackground.jpg);
+  background-size: cover;
+  height: 100%;
+
+}
+
+.homes-information .homes-information-benefits{
+
+  position: relative;
+  background-position: center right;
+  background-size: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+
+.homes-information-benefits .text_buy h3 {
+  line-height: 1em;
+  margin-bottom: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 3em;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+
+}
+
+.homes-information-benefits .text p {
+  line-height: 1.1em;
+  font-size: 1.5em;
+  display: block;
+  margin-left: 30px;
+}
+.row .benefit_container{
+  position: relative;
+  background-size: 100%;
+  max-width:45%;
+  max-height: 100%;
+  margin: auto;
+  background-image:  url(/img/home_buy.png);
+  border-radius: 10%;
+  margin-top: 40px;
+  padding: inherit;
+
+}
+
+
+@media (max-width: 600px){
+  .row .benefit_container{
+    position: relative;
+    background-size: 100%;
+    max-width:90%;
+    max-height: 100%;
+    margin: auto;
+    background-image:  url(/img/home_buy.png);
+    border-radius: 10%;
+    margin-top: 40px;
+    margin-left: 10px;
+
+  }
+  .homes-information-benefits .row .text{
+    margin-top: 30px;
+
+    margin-left: 50px;
+
+  }
+  .homes-information-benefits .text p {
+    position: fixed;
+  }
+
+}
+
+
+.profile_wrapper input[type=text]{
+  border-radius: 0;
+  padding-right: 23px;
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+  border-radius: 2px;
+  line-height: 34px;
+  width: 100%;
+}
+.tel input[type=tel]{
+  border-radius: 0;
+  padding-right: 23px;
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+   line-height: 32px;
+   width: 100%;
+}
+.profile_group .tel{
+  margin-top: 11px;
+
+}
+
+.adress input[type=adress]{
+  border-radius: 0;
+  padding-right: 23px;
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+  line-height: 32px;
+  width: 100%;
+}
+.profile_group .adress{
+  margin-top: 11px;
+
+}
+
+.profile_group .message textarea{
+  background-color: #f5f5f5;
+  border: 2px solid #c49b2c;
+  line-height: 20px;
+  width: 100%;
+}
+.profile_group .message{
+  margin-top: 20px;
+
+}
+h5 {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-family: "Roboto Slab", Arial, Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+.homes-information-benefits .text h2 {
+  line-height: 1.5em;
+  margin-bottom: 5px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 4em;
+  text-transform: uppercase;
+  margin-top: 50px;
+
+}
+.homes-information-benefits .text p {
+  line-height: 1.5em;
+  font-size: 2.5em;
+  display: block;
+  margin-left: 30px;
+  font-family: 'Gloria Hallelujah', cursive;
+
+}
+.profile_group button{
+  background: #000000;
+  margin-top: 15px;
+  width: 150px;
+  height: 50px;
+  border-radius: 15%;
+  background-image: url(/img/button.png);
+  background-position:top;
+
+
+}
+.profile_group a{
+  color: #ffffff;
+}
+
+.home_end {
+  background: #e8a600;
+  background-image: url(/img/home_end_2.png);
+  background-repeat: no-repeat;
+  background-position: center top;
+  width: 100%;
+}
+.home_end .row a{
+  font-size: 50px;
+  margin-top: 30px;
+  color: #000000;
 }
