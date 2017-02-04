@@ -671,8 +671,8 @@ h5 {
   padding: 15px 0px;
 }
 .shop_sales_section .col-md-3.col-xs-6 {
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .banner_container {
   padding: 0px 2px;
@@ -704,7 +704,7 @@ h5 {
 .shop_sales_section .image_container {
   position: relative;
   overflow: hidden;
-  margin-top: 4px;
+  margin-top: 20px;
 }
 .shop_sales_section img {
   width: 100%;
@@ -755,7 +755,6 @@ h5 {
 .pop_up_on_shop_list {
   position: absolute;
   top: 0;
-  /*bottom: 0;*/
   width: auto;
   height: inherit;
   transform: translateX(100%);

@@ -111,7 +111,7 @@
                 <!--MENU+LOGO-->
                 <ul class="nav navbar-nav navbar-collapse collapse" id="navbar-collapse">
                   <li>
-                    <a href="#home_campaign">Home</a>
+                    <a href="#home">Home</a>
                     <div class="underline_menu"></div>
                   </li>
                   <li>
@@ -144,7 +144,7 @@
 
 
     <!-- make video to background -->
-    <section class="video_section">
+    <section class="video_section" id="home">
       <div class="video-container">
         <video loop muted autoplay class="video-info">
           <source src="img/Banner.webm" type="video/webm">
@@ -308,7 +308,7 @@
     </section>
 
     <section class="shop_sales_section">
-      <div class="container" id="tab-list">
+      <div class="container-fluid" id="tab-list">
         <ul class="row banner_container">
           <li>
             <a class="col-md-3 col-xs-6 banner_element" href="#list_shop">Shop list</a>
@@ -319,38 +319,13 @@
         </ul>
 
         <div id="list_sales">
-          <div class="item">
-            <div class="item_container" data-item-id="{{id}}">
-              aaaaaaaaaaaaa
-            </div>
-
-          </div>
-
-          <div class="item">
-            <div class="item_container" data-item-id="{{id}}">
-              bbbbbbbbbbbbbbbbbbbbb
-            </div>
-
-          </div>
-
-          <div class="item">
-            <div class="item_container" data-item-id="{{id}}">
-              cccccccccccccccccc
-            </div>
-
-          </div>
-          <div class="item">
-            <div class="item_container" data-item-id="{{id}}">
-              ddddddddddddddddddddd
-            </div>
-
-          </div>
-
           <a id="previous" href="#">Previous</a>
           <a id="next" href="#">Next</a>
+
         </div>
 
         <div id="list_shop" class="row">
+
         </div>
       </div>
     </section>
@@ -397,7 +372,11 @@
 
     <script id="list_sales_template" type="text/x-handlebars-template">
       {{#each items}}
-
+        <div class="item_sales">
+          <img src="{{imageUrl}}">
+          <h3>{{Name}}</h3>
+          <p></p>
+        </div>
       {{/each}}
     </script>
 <!-- Modal of shop list -->
