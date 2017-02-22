@@ -5,7 +5,8 @@ $(document).ready(function(){
   var itemModalTemplate = Handlebars.compile($("#item-modal-template").html());
   $.ajax({
     type : "get",
-    url  : "libs/prodData.json"
+    url  : "/api/data/shop",
+    contentType:"application/json"
   }).then(function(data){
     loadedData = loadedData.concat(data.items);
   }).fail(function(error){
@@ -43,7 +44,8 @@ $(document).ready(function(){
   var listShopTemplate = Handlebars.compile(source);
   $.ajax({
     type : "get",
-    url  : "libs/shopData.json"
+    url  : "/api/data/shop",
+    contentType:"application/json"
   }).then(function(data){
     var itemHtml = listShopTemplate(data);
     $("#list_shop").html(itemHtml);

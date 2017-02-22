@@ -1,0 +1,58 @@
+{
+  "private": true,
+  "engines": {
+    "node": ">=4"
+  },
+  "devDependencies": {
+    "bluebird": "^3.3.3",
+    "browser-sync": "^2.2.1",
+    "composable-middleware": "^0.3.0",
+    "cookie-parser": "^1.4.3",
+    "del": "^2.2.0",
+    "express-jwt": "^3.0.0",
+    "express-session": "^1.14.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-cache": "^0.4.2",
+    "gulp-cssnano": "^2.0.0",
+    "gulp-eslint": "^3.0.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-load-plugins": "^1.2.4",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.0.0",
+    "jsonwebtoken": "^5.0.0",
+    "main-bower-files": "^2.5.0",
+    "mongoose": "^4.6.0",
+    "mongoose-find-one-or-create": "^0.2.0",
+    "passport": "~0.3.0",
+    "passport-facebook": "^2.1.1",
+    "passport-local": "^1.0.0",
+    "run-sequence": "^1.2.2",
+    "wiredep": "^4.0.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true,
+      "browser": true
+    },
+    "rules": {
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "lodash": "^4.16.6",
+    "mongoose": "^4.6.7"
+  }
+}
