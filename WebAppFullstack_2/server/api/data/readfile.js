@@ -1,4 +1,4 @@
 var fs = require('fs');
-module.exports = (file, callback) => {
+module.exports = function(file, callback) {
    fs.readFile(file, callback);
  }
